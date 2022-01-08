@@ -1,0 +1,575 @@
+/*
+ Theme Name:   Literacy GP Child
+ Theme URI:    https://generatepress.com
+ Description:  Default Generate Press child
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+/* Set up iframe on home page */
+.home #content {
+	position: relative;
+}
+/* Format the youtube video on home page */
+.home h1.youtube-title {
+	position: absolute;
+	top: 250px;
+	left: 27%;
+	color: white;
+}
+.home iframe {
+	position: relative;
+	z-index: 99;
+}
+.home .ugb-icon.youtube-icon {
+	position: absolute;
+	top: 300px;
+	left: 48%;
+}
+/* Header height */
+.main-navigation {
+	height: 5rem;
+}
+/* Adjust logo */
+.main-navigation .inside-navigation {
+	align-items: flex-end;
+	top: 1rem;
+	margin-left: 2rem;
+}
+/* Make sure menu is on top layer */
+#primary-menu {
+	z-index: 99;
+}
+/* Get rid of space between navbar and hero image */
+#content {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/* Delete spacing below cover image */
+.wp-block-cover.has-background-dim {
+	margin-bottom: 0 !important;
+}
+.wp-block-cover p {
+	margin-bottom: 0;
+}
+/* Indent cover text */
+.wp-block-cover__inner-container {
+	padding-left: 5rem;
+}
+/* Firt line of cover title */
+h1.cover-title {
+	font-size: 1.2rem;
+	border-bottom: 3px solid var(--green,green);
+	display: table-cell;
+	padding: .2rem;
+}
+h2.cover-title {
+	width: 30rem;
+}
+p.cover-title {
+	width: 30rem;
+}
+p.our-mission {
+	margin-bottom: 0;
+	padding-bottom: 1rem;
+}
+/* Override theme adding h2 and h3 css whenever a background is added */
+h2,
+h2.has-background {
+	padding-top: .5rem !important;
+	padding-bottom: .5rem !important;
+	margin-bottom: 0 !important;
+}
+/* Override theme adding h2 for media-text blocks */
+h2.media-text,
+h2.media-text.has-background {
+	/* padding: 0 2rem 0 2rem !important; */
+	margin-left: 2rem;
+	padding-left: 0;
+	margin-bottom: 0 !important;
+}
+.media-text .wp-block-button__link {
+	border: 2px solid var(--green);
+	margin-left: 2rem;
+}
+.cover-title .wp-block-button__link img {
+	border: 2px solid var(--green);
+	margin-left: 0;
+}
+.home .tutor-experience .gb-grid-column:nth-child(1) img {
+	border-top: solid 10px var(--orange);
+	background-size: contain;
+	width: 400px;
+	height: 270px;
+}
+/*
+.home .tutor-experience .gb-inside-container {
+	text-align: center;
+}
+*/
+.home .tutor-experience .gb-grid-column:nth-child(2) img {
+	border-top: solid 10px var(--green);
+	background-size: contain;
+	width: 400px;
+	height: 270px;
+}
+.home .tutor-experience .gb-grid-column:nth-child(3) img {
+	border-top: solid 10px black;
+	background-size: contain;
+	width: 400px;
+	height: 270px;
+}
+.home .tutor-experience .gb-grid-column a.wp-block-button__link {
+	border-radius: 0;
+	background: white;
+	color: black;
+}
+.home .tutor-experience .gb-grid-column:nth-child(1) a.wp-block-button__link {
+	border: 2px solid var(--orange);
+}
+.home .tutor-experience .gb-grid-column:nth-child(2) a.wp-block-button__link {
+	border: 2px solid var(--green);
+}
+.home .tutor-experience .gb-grid-column:nth-child(3) a.wp-block-button__link {
+	border: 2px solid black;
+}
+.home .tutor-experience .gb-grid-column:nth-child(1) .dash {
+	color: var(--orange);
+	margin-bottom: .5rem;
+}
+.home .tutor-experience .gb-grid-column:nth-child(2) .dash {
+	color: var(--green);
+	margin-bottom: .5rem;
+}
+.home .tutor-experience .gb-grid-column:nth-child(3) .dash {
+	color: black;
+	margin-bottom: .5rem;
+}
+.home .tutor-experience .ugb-card__item1,
+/* .home .wp-block-column:nth-child(1) .stk-block-card, */
+.leading-men .pressing-challenges .ugb-card__item1 {
+	border-top: 10px solid var(--orange);
+}
+.home .tutor-experience .ugb-card__item2,
+.leading-men .pressing-challenges .ugb-card__item2 {
+	border-top: 10px solid var(--green);
+}
+.home .tutor-experience .ugb-card__item3,
+.leading-men .pressing-challenges .ugb-card__item3 {
+	border-top: 10px solid black;
+}
+/* For the new version (v3) of stackable blocks */
+/*
+.home .tutor-experience .stk-container-padding {
+	padding-top: 1rem;
+}
+.home .tutor-experience .wp-block-column:nth-child(1)  .dash {
+	color: var(--orange);
+	font-weight: 1000;
+	margin-bottom: 0;
+}
+.home .tutor-experience .wp-block-column:nth-child(1) h2 {
+	margin-top: 0;
+}
+*/
+.home .tutor-experience .wp-block-column:nth-child(1) a.stk-link {
+	border: 2px solid var(--orange)!important;
+}
+.home .tutor-experience .wp-block-column:nth-child(1) .stk-button__inner-text {
+	color: black;
+}
+.home .tutor-experience .ugb-card__item1 .ugb-button,
+.leading-men .pressing-challenges .ugb-card__item1 .ugb-button {
+	border: 2px solid var(--orange) !important;
+}
+.home .tutor-experience .ugb-card__item2 .ugb-button,
+.leading-men .pressing-challenges .ugb-card__item2 .ugb-button {
+	border: 2px solid var(--green) !important;
+}
+.home .our-reach .gb-grid-column  p.our-reach-num {
+	font-size: 2.5rem;
+	margin-bottom: .2rem;
+}
+.home .join-team a {
+	border: 2px solid var(--green,green);
+	background-color: transparent;
+	margin-top: 2rem;
+}
+/* Our team tabs - our staff */
+.kt-inner-tab-1::.kt-tab-inner-content-inner h3,
+.kt-inner-tab-2 .kt-tab-inner-content-inner h3,
+.kt-inner-tab-3 .kt-tab-inner-content-inner h3,
+.kt-inner-tab-4 .kt-tab-inner-content-inner h3,
+.kt-inner-tab-5 .kt-tab-inner-content-inner h3 {
+	margin-top: 2rem;
+	padding-bottom: 1rem;
+	border-bottom: 3px solid var(--green,green);
+}
+.kt-inner-tab-1::.kt-tab-inner-content-inner h4,
+.kt-inner-tab-2 .kt-tab-inner-content-inner h4,
+.kt-inner-tab-3 .kt-tab-inner-content-inner h4 {
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+.kt-inner-tab-1::.kt-tab-inner-content-inner  p:nth-child(4n + 1),
+.kt-inner-tab-2 .kt-tab-inner-content-inner  p:nth-child(4n + 1) {
+	padding-bottom: 1rem;
+	border-bottom: 3px solid var(--green,green);
+	display: table-cell;
+}
+/* Our team tabs - our board */
+.kt-inner-tab-3 .kt-tab-inner-content-inner  p:nth-child(3n + 1) {
+	padding-bottom: 1rem;
+	border-bottom: 3px solid var(--green,green);
+	display: table-cell;
+}
+/* The challenge page blocks */
+.challenge-blocks .wp-block-column {
+	border-top: 8px solid var(--orange,orange);
+}
+.challenge-blocks h3 {
+	color: var(--orange,orange);
+	padding-top: 1rem;
+	font-size: 1rem;
+	font-weight: 900;
+}
+/* Our work text columns */
+.our-work-left-column {
+	margin: 5rem;
+}
+.our-work-left-column p {
+	font-size: x-large;
+	line-height: 1.3;
+	
+}
+.our-work-right-column {
+	margin: 5rem 5rem 0 5rem;
+}
+.our-work-reading {
+	padding: 0 0 2rem 0;
+}
+/* Our work page blocks */
+.our-work-coaches .wp-block-column {
+	border-top: 8px solid var(--orange,orange);
+}
+.our-work-coaches h3 {
+	color: var(--orange,orange);
+	padding-top: 1rem;
+	font-size: 1rem;
+	font-weight: 900;
+}
+.our-work-coaches h4 {
+	font-weight: 900;
+}
+.our-work-coaches .wp-block-column:nth-child(1) {
+	border-top: 8px solid var(--black,black);
+}
+.our-work-coaches .wp-block-column:nth-child(1) h3 {
+	color: var(--black,black);
+}
+.our-work-coaches .wp-block-column:nth-child(2) {
+	border-top: 8px solid var(--green,green);
+}
+.our-work-coaches .wp-block-column:nth-child(2) h3 {
+	color: var(--green,green);
+}
+h2.our-work-model {
+	background: var(--green,green);
+}
+.our-work-model-grades h3 {
+	font-size: 1rem;
+	color: var(--orange,orange);
+}
+.wp-block-image.our-work-model {
+	background: var(--green,green);
+}
+.our-work-model-grades img {
+	margin: -4rem 0;
+}
+/* FAQ section */
+.our-work .faq,
+.leading-men .faq-fellow,
+.tutor-experience .faq-tutor-experience {
+	background: var(--black,black);
+}
+.our-work .faq span.uagb-question,
+.leading-men .faq-fellow span.uagb-question {
+	color: var(--green,green);
+}
+.our-results .wp-block-column.grid-upper-right,
+.our-results .wp-block-column.grid-lower-right {
+	margin-left: 0;
+}
+.our-results .grid-upper-right p,
+.our-results .grid-upper-right p.has-background {
+	margin-bottom: 0;
+}
+/*
+.our-results .our-results-grid-upper-right .our-results-teacher {
+	border-top: 4px solid black;
+	padding: 4px 0 0 0;
+	display: table-cell;
+}
+*/
+/*
+.our-work .faq .uagb-faq-questions-button.uagb-faq-questions {
+	bsckground: var(--black,black);
+}
+*/
+.where-we-work .wp-block-columns.state-icons .wp-block-column {
+	background: var(--green,green);
+}
+.where-we-work .wp-block-columns.state-icons .wp-block-column:not(:first-child) {
+	margin-left: .2rem;
+}
+.where-we-work .sidebar-container {
+	margin-top: 0;
+}
+.where-we-work .sidebar-container .ugb-container__wrapper {
+	padding: 0 !important;
+	box-shadow: none !important;
+}
+.where-we-work .wp-block-column.sidebar {
+	margin-left: 0;
+}
+.where-we-work .wp-block-ugb-icon.sidebar-icon {
+	margin-bottom: 0;
+}
+.where-we-work p.sidebar-number {
+	font-size: 2.5rem;
+	color: orange;
+	margin-top: -1:rem;
+	margin-bottom: .1rem;
+}
+.where-we-work p.sidebar-group {
+	font-size: 1.5rem;
+	margin-top: -1:rem;
+	margin-bottom: 0;
+}.where-we-work .sidebar-location {
+	margin-bottom: .2rem;
+}
+.where-we-work .sidebar-divider {
+	margin-top: 2rem;
+}
+.where-we-work p.sidebar-text {
+	margin-bottom: .2rem;
+	font-weight: 900;
+}
+.where-we-work .sidebar-name {
+	align-items: center;
+	padding-top: 3rem;
+	height: 1rem;
+}
+.where-we-work .sidebar-phone,
+.where-we-work .sidebar-email {
+	align-items: center;
+	padding-top: 1rem;
+	height: 1rem;
+}
+.tutor-experience .benefits .wp-block-column {
+	border: 1px solid var(--lightgray,lightgray);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	padding: 1rem;
+}
+.tutor-experience .wp-block-columns.benefits .wp-block-column:nth-child(1) {
+	border-top: 10px solid var(--orange,orange);
+}
+.tutor-experience .wp-block-columns.benefits .wp-block-column:nth-child(2) {
+	border-top: 10px solid var(--black,black);
+}
+.tutor-experience .wp-block-columns.benefits .wp-block-column:nth-child(3) {
+	border-top: 10px solid var(--green,green);
+}
+.apply ugb-card__item1 {
+	border-top: 4px solid var(--orange,orange); 
+	border: 3px solid var(--orange,orange);
+}
+.apply .ugb-card__item1 {
+	border-top: 10px solid var(--orange,orange); 
+}
+.apply .ugb-card__item1 .ugb-button {
+	border: 2px solid var(--orange,orange) !important;
+}
+.apply .ugb-card__item2 {
+	border-top: 10px solid var(--green,green); 
+}
+.apply .ugb-card__item2 .ugb-button {
+	border: 2px solid var(--green,green) !important;
+}
+.category-alumni h1.page-title,
+.category-community h1.page-title,
+.category-tutor-stories h1.page-title,
+.category-alumni .inside-article,
+.category-community .inside-article,
+.category-tutor-stories .inside-article  {
+	padding: 0 10rem;
+}
+.category-alumni h2.entry-title,
+.category-community h2.entry-title,
+.category-tutor-stories h2.entry-title {
+	font-size: 1.5rem;
+}
+.category-alumni h2.entry-title a,
+.category-community h2.entry-title a,
+.category-tutor-stories h2.entry-title a {
+	color: var(--orange,orange);
+}
+
+/* Footer tweets */
+.tweets {
+	background: var(--green,green);
+}
+.tweets h4 {
+	color: black;
+	font-size: 1rem;
+	font-weight: 900;
+}
+.tweets p {
+	color: black;
+	font-size: .8rem;
+}
+/* Footer links */
+.footer-links {
+	background: black;
+}
+.footer-links h4 {
+	color: white;
+}
+.footer-links p {
+	margin-bottom: 0;
+}
+.footer-links p a {
+	font-size: .8rem;
+	color: white;
+}
+.footer-links p:first-child a {
+	font-weight: 900;
+}
+/* Footer copyright */
+.copyright {
+	background: var(--gray,gray);
+}
+.copyright p {
+	color: white;
+	font-size: .8rem;
+}
+/* Adjust size of logo in footer */
+.copyright .wp-block-image img {
+	height: 1.5rem;
+}
+.footer-widgets .widget {
+	margin: 0;
+}
+.footer-widgets-container {
+	padding: 0;
+}
+.blog .wp-show-posts {
+	padding: 2rem 3rem 0 3rem;
+}
+.blog h3.wp-show-posts-entry-title a {
+	color: var(--orange,orange);
+}
+/* Turn off default copyright */
+.site-info {
+	display: none;
+}
+/* Assign color variables */
+:root {
+	--dark-gray:		#888888;
+	--light-gray:  		#dddddd;
+	--dark--green-1:	#24bca8;
+	--green:			#29d7c0;
+	--light-green-1:	#44dcc8;
+	--light-green-2:	#5fe1d0;
+	--light-green-3:	#79e6d8;
+	--light-green-4:	#94ebe0;
+	--light-green-5:	#aff0e7;
+	--light-green-6:	#caf5ef;
+	--dark-orange-2:	#b54a2f;
+	--dark-orange-1:	#d45736;
+	--orange:			#f2633e;
+	--light-orange-1:	#f47756;
+	--light-orange-2:	#f58a6e;
+	--light-orange-3:	#f79e86;
+	--light-orange-4:	#f8b19f;
+	--light-orange-5:	#fac4b7;
+	--light-orange-6:	#fcd8cf;
+}
+/* Gutenberg color palette */
+.has-orange-color {
+	color: #f2633e;
+}
+.has-orange-background-color {
+	background-color: #f2633e;
+}
+.has-green-color {
+	color: #29d7c0;
+}
+.has-green-background-color {
+	background-color: #29d7c0;
+}
+.has-gray-color {
+	color: #131313;
+}
+.has-gray-background-color {
+	background-color: #131313;
+}
+.has-lightgray-color {
+	color: #f2f2f2;
+}
+.has-lightgray-background-color {
+	background-color: #f2f2f2;
+}
+.has-black-color {
+	color: #000000;
+}
+.has-black-background-color {
+	background-color: #000000;
+}
+.has-white-color {
+	color: #ffffff;
+}
+.has-white-background-color {
+	background-color: #ffffff;
+}
+@media (min-width: 1025px) {
+/* Set up twitter footer ----------------------------------------------------------------------- */
+.indent,
+div[id^="wpforms-"] {
+	padding: 0 10rem 0 10rem;
+}
+div[id="^wpforms-"]
+.wp-block-columns.our-work-coaches,
+.wp-block-columns.challenge-blocks {
+	margin: 0 2rem;
+}
+#footer-widgets .tweets .wp-show-posts {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	}
+#footer-widgets .tweets .wp-show-posts h4 {
+	margin-bottom: 0;
+	}
+#footer-widgets .tweets .wp-show-posts > article {
+	flex: 1;
+	}
+/* Set up twitter footer */
+#footer-widgets .footer-links .wp-show-posts {
+	display: flex;
+	flex-direction: row;
+	}
+#footer-widgets .footer-links .wp-show-posts > article {
+	flex: 1;
+	}
+/* Set up copyright footer */
+#footer-widgets .copyright .wp-show-posts {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	}
+#footer-widgets .copyright .wp-show-posts > article {
+	flex: 1;
+	}
+}
