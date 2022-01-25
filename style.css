@@ -46,28 +46,33 @@
 	padding-top: 0;
 	padding-bottom: 0;
 }
-/* Munu styling */
+/* Munu styling --------------------------------------------------------------------------*/
 @media (min-width: 769px) {
-.main-navigation .main-nav ul li > a:hover {
+/* Style when hovering over item */
+.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a {
 	border-bottom:2px solid var(--green,green);
 	background: transparent !important;
 	display: inline;
 	padding-bottom: 10px;
-	/* margin: 0 20px !important; */
+	color: white !important;
+}
+/* Style when item is selected */
+.main-navigation .main-nav ul li[class*="current-menu-"] > a {
+	border-bottom:2px solid var(--orange,orange);
+	background: transparent !important;
+	display: inline;
+	padding-bottom: 10px;
 	color: white !important;
 }
 /*
-.main-navigation .main-nav ul li.menu-item-has-children > a:hover {
-	margin: 0 !important;
-}
-*/
 .main-navigation .main-nav ul li > a:visited {
 	background: #2c2c2c !important;
-	/* border-bottom: var(--orange,orange) !important; */
 }
+*/
+/* Style submenu */
 .main-navigation .main-nav ul ul.sub-menu li > a:hover {
 	border: 0;
-	background: var(--orange,orange) !important;
+	background: var(--dark-orange-3,orange) !important;
 	display: block;
 	padding:  10px 20px !important;
 	margin: 0 !important;
@@ -77,8 +82,9 @@
 	background: var(--orange,orange) !important;
 	color: white !important;
 }
-*/
 }
+/* border-bottom: var(--orange,orange) !important; */
+/* End menu styling -------------------------------------------------------------------*/
 /* Delete spacing below cover image */
 .wp-block-cover.has-background-dim {
 	margin-bottom: 0 !important;
@@ -454,23 +460,16 @@ h2.our-work-model {
 .category-tutor-stories h2.entry-title a {
 	color: var(--orange,orange);
 }
-
-/* Footer tweets */
-.tweets {
-	background: var(--green,green);
-}
-.tweets h4 {
-	color: black;
-	font-size: 1rem;
-	font-weight: 900;
-}
-.tweets p {
-	color: black;
-	font-size: .8rem;
-}
 /* Footer links */
-.footer-links {
+.site-footer {
+	padding-left: 2rem;
 	background: black;
+}
+.wp-show-posts-entry-content {
+	padding-right: 1rem;
+}
+.footer-links {
+	background: var(--links-gray);
 }
 .footer-links h4 {
 	color: white;
@@ -487,7 +486,7 @@ h2.our-work-model {
 }
 /* Footer copyright */
 .copyright {
-	background: var(--gray,gray);
+	background: var(--copyright-gray,gray);
 }
 .copyright p {
 	color: white;
@@ -513,6 +512,13 @@ h2.our-work-model {
 .site-info {
 	display: none;
 }
+/* Add Americorp logo */
+.footer-logo.americorp {
+    background: url(http://teebark.link/wp-content/uploads/2022/01/AmeriCorps_65x45_White.png) no-repeat !important;
+    padding-left: 65px !important;
+    width: 65px !important;
+    height: 45px !important;
+}
 /* Assign color variables */
 :root {
 	--dark-gray:		#888888;
@@ -525,8 +531,9 @@ h2.our-work-model {
 	--light-green-4:	#94ebe0;
 	--light-green-5:	#aff0e7;
 	--light-green-6:	#caf5ef;
-	--dark-orange-2:	#b54a2f;
 	--dark-orange-1:	#d45736;
+	--dark-orange-2:	#b54a2f;
+	--dark-orange-3:	#f05026;
 	--orange:			#f2633e;
 	--light-orange-1:	#f47756;
 	--light-orange-2:	#f58a6e;
@@ -534,6 +541,8 @@ h2.our-work-model {
 	--light-orange-4:	#f8b19f;
 	--light-orange-5:	#fac4b7;
 	--light-orange-6:	#fcd8cf;
+	--copyright-gray:   #131313;
+	--links-gray:       #000000;
 }
 /* Gutenberg color palette */
 .has-orange-color {
