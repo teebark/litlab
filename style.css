@@ -1,4 +1,4 @@
-/*
+  /*
  Theme Name:   Literacy GP Child
  Theme URI:    https://generatepress.com
  Description:  Default Generate Press child
@@ -14,8 +14,8 @@
 /* Format the youtube video on home page */
 .home h1.youtube-title {
 	position: absolute;
-	top: 250px;
-	left: 27%;
+	top: 11%;
+	left: 33%;
 	color: white;
 }
 .home iframe {
@@ -24,7 +24,7 @@
 }
 .home .ugb-icon.youtube-icon {
 	position: absolute;
-	top: 300px;
+	top: 12%;
 	left: 48%;
 }
 /* Header height */
@@ -46,7 +46,7 @@
 	padding-top: 0;
 	padding-bottom: 0;
 }
-/* Munu styling --------------------------------------------------------------------------*/
+/* Menu styling --------------------------------------------------------------------------*/
 @media (min-width: 769px) {
 /* Style when hovering over item */
 .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a {
@@ -64,16 +64,14 @@
 	padding-bottom: 10px;
 	color: white !important;
 }
-/*
 .main-navigation .main-nav ul li > a:visited {
 	background: #2c2c2c !important;
 }
-*/
 /* Style submenu */
 .main-navigation .main-nav ul ul.sub-menu li > a:hover {
-	border: 0;
+	border: 0 !important;
 	background: var(--dark-orange-3,orange) !important;
-	display: block;
+	display: block !important;
 	padding:  10px 20px !important;
 	margin: 0 !important;
 	color: white !important;
@@ -81,12 +79,20 @@
 .main-navigation .main-nav ul ul.sub-menu li > a {
 	background: var(--orange,orange) !important;
 	color: white !important;
+	display: block !important;
 }
+.main-navigation .main-nav .apply-menu-color {
+	background: var(--dark-green-3,green);
 }
+.main-navigation .main-nav .apply-menu-color a {
+	font-weight: 900;
+}
+} 
 /* border-bottom: var(--orange,orange) !important; */
 /* End menu styling -------------------------------------------------------------------*/
 /* Delete spacing below cover image */
-.wp-block-cover.has-background-dim {
+.wp-block-cover.has-background-dim,
+.wp-block-cover.is-light {
 	margin-bottom: 0 !important;
 }
 .wp-block-cover p {
@@ -102,16 +108,22 @@ h1.cover-title {
 	border-bottom: 3px solid var(--green,green);
 	display: table-cell;
 	padding: .2rem;
+	color: white !important;
 }
 h2.cover-title {
 	width: 30rem;
+	color: white !important;
 }
 p.cover-title {
 	width: 30rem;
+	color: white !important;
 }
 p.our-mission {
 	margin-bottom: 0;
 	padding-bottom: 1rem;
+}
+h2.our-mission {
+	padding-top: 5rem !important;
 }
 /* Override theme adding h2 and h3 css whenever a background is added */
 h2,
@@ -121,20 +133,24 @@ h2.has-background {
 	margin-bottom: 0 !important;
 }
 /* Override theme adding h2 for media-text blocks */
+/*
 h2.media-text,
 h2.media-text.has-background {
-	/* padding: 0 2rem 0 2rem !important; */
 	margin-left: 2rem;
 	padding-left: 0;
 	margin-bottom: 0 !important;
 }
+*/
 .media-text .wp-block-button__link {
 	border: 2px solid var(--green);
 	margin-left: 2rem;
 }
-.cover-title .wp-block-button__link img {
+.cover-title a.wp-block-button__link {
 	border: 2px solid var(--green);
+	border-radius: 0;
 	margin-left: 0;
+	background: transparent;
+	margin-top: 1rem;
 }
 .home .tutor-experience .gb-grid-column:nth-child(1) img {
 	border-top: solid 10px var(--orange);
@@ -188,21 +204,60 @@ h2.media-text.has-background {
 .home .tutor-experience .ugb-card__item1,
 /* .home .wp-block-column:nth-child(1) .stk-block-card, */
 .leading-men .pressing-challenges .ugb-card__item1 {
-	border-top: 10px solid var(--orange);
 	border: 1px solid var(--lightgray,lightgray) !important;
+	border-top: 10px solid var(--orange) !important;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 .home .tutor-experience .ugb-card__item2,
 .leading-men .pressing-challenges .ugb-card__item2 {
-	border-top: 10px solid var(--green);
 	border: 1px solid var(--lightgray,lightgray) !important;
+	border-top: 10px solid black !important;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 .home .tutor-experience .ugb-card__item3,
 .leading-men .pressing-challenges .ugb-card__item3 {
-	border-top: 10px solid black;
 	border: 1px solid var(--lightgray,lightgray) !important;
+	border-top: 10px solid var(--green) !important;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+.leading-men .wp-block-media-text {
+	margin-bottom: 0 !important;
+}
+.newsletter .wp-block-columns {
+	gap: 10rem;
+}
+.newsletter .wp-block-column {
+	border: 1px solid var(--lightgray,lightgray) !important;
+	border-top: 10px solid black !important;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
+	padding: 1rem;
+}
+.newsletter .wp-block-column h2 {
+	font-size: 1rem;
+	font-weight: 900;
+}
+.newsletter .wp-block-column h3 a {
+	font-size: 2rem;
+	color: var(--dark-green-2,green);
+}
+.annual-reports .wp-block-columns {
+	gap: 10rem;
+}
+.annual-reports .wp-block-column {
+	border: 1px solid var(--lightgray,lightgray) !important;
+	border-top: 10px solid black !important;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
+	padding: 1rem;
+}
+.annual-reports .wp-block-column h2 {
+	font-size: 1rem;
+	font-weight: 900;
+}
+.annual-reports .stk-img-wrapper {
+	margin-left: 0;
+}
+.annual-reports .wp-block-column a {
+	color: var(--dark-green-2,green);
 }
 /* For the new version (v3) of stackable blocks */
 /*
@@ -219,7 +274,7 @@ h2.media-text.has-background {
 }
 */
 .home .tutor-experience .wp-block-column:nth-child(1) a.stk-link {
-	border: 2px solid var(--orange)!important;
+	border: 2px solid var(--orange) !important;
 }
 .home .tutor-experience .wp-block-column:nth-child(1) .stk-button__inner-text {
 	color: black;
@@ -240,6 +295,36 @@ h2.media-text.has-background {
 	border: 2px solid var(--green,green);
 	background-color: transparent;
 	margin-top: 2rem;
+}
+/* Our Team styling */
+.our-team .uagb-tab {
+	/* padding-left: 100px !important;
+	padding-right: 100px !important; */
+	background: var(--green,green);
+}
+/* Tab font color */
+.our-team .uagb-tab span {
+	color: black !important;
+}
+.our-team h1 {
+	margin-top: 1rem;
+	margin-bottom: .5rem;
+}
+.our-team .uagb-tabs__body h4 {
+	border-top: 3px solid var(--green,green);
+	padding-top: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 0;
+}
+.our-team .uagb-tabs__body h1 + h4 {
+	border-top: 3px solid var(--green,green);
+	margin-top: 0;
+}
+.our-team .uagb-tabs__body h4 + p {
+	margin-bottom: 1rem;
+}
+.our-team .uagb-tabs__body h4 + p + p {
+	margin-bottom: 1rem;
 }
 /* Our team tabs - our staff */
 .kt-inner-tab-1::.kt-tab-inner-content-inner h3,
@@ -319,6 +404,12 @@ h2.media-text.has-background {
 .our-work-coaches .wp-block-column:nth-child(2) h3 {
 	color: var(--green,green);
 }
+.our-work-coaches .wp-block-column:nth-child(3) {
+	border-top: 8px solid var(--orange,orange);
+}
+.our-work-coaches .wp-block-column:nth-child(3) h3 {
+	color: var(--orange,orange);
+}
 h2.our-work-model {
 	background: var(--green,green);
 }
@@ -328,6 +419,9 @@ h2.our-work-model {
 }
 .wp-block-image.our-work-model {
 	background: var(--green,green);
+}
+.our-work h2.our-work-model {
+	padding-top: 3rem !important;
 }
 .our-work-model-grades img {
 	margin: -4rem 0;
@@ -342,14 +436,54 @@ h2.our-work-model {
 .leading-men .faq-fellow span.uagb-question {
 	color: var(--green,green);
 }
-.our-results .wp-block-column.grid-upper-right,
-.our-results .wp-block-column.grid-lower-right {
-	margin-left: 0;
+h2#our-results-at-a-glance {
+	background: var(--dark-green-1, green);
+}
+.our-results .left-column cite {
+	border-top: 2px solid var(--green, green);
+	padding-top: 10px;
+}
+.our-results .right-column-top cite {
+	border-top: 2px solid var(--dark-green-1, green);
+	padding-top: 10px;
+}
+.our-results .right-column-bottom-left cite {
+	border-top: 2px solid var(--dark-orange-1, orange);
+	padding-top: 10px;
+}
+.our-results .right-column-bottom-right cite {
+	border-top: 2px solid white;
+	padding-top: 10px;
+}
+/*
+.our-results .wp-block-cover__inner-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.our-results .school-partners h2 {
+	color: white !important;
+	font-size: 1.5rem;
+	margin-bottom: .3rem !important;
+	text-align: center;
+}
+.our-results .school-partners p {
+	color: white !important;
+	font-weight: 900;
+	border-top: 3px solid var(--green,green);
+	padding-top: 5px;
+	width: 10rem;
+}
+.our-results .wp-block-column .right-column,
+.our-results .wp-block-column .right-column {
+	margin-left: 0 !important;
+	height: 98%;
 }
 .our-results .grid-upper-right p,
 .our-results .grid-upper-right p.has-background {
 	margin-bottom: 0;
 }
+*/
 /*
 .our-results .our-results-grid-upper-right .our-results-teacher {
 	border-top: 4px solid black;
@@ -364,6 +498,9 @@ h2.our-work-model {
 */
 .where-we-work .wp-block-columns.state-icons .wp-block-column {
 	background: var(--green,green);
+}
+.where-we-work .wp-block-columns.state-icons {
+	margin-bottom: 0;
 }
 .where-we-work .wp-block-columns.state-icons .wp-block-column:not(:first-child) {
 	margin-left: .2rem;
@@ -412,7 +549,13 @@ h2.our-work-model {
 	padding-top: 1rem;
 	height: 1rem;
 }
-.tutor-experience .benefits .wp-block-column {
+.challenge-blocks .wp-block-column {
+	border-top: 10px solid var(--orange,orange) !important;
+}
+.tutor-experience .benefits .wp-block-column,
+.challenge-blocks .wp-block-column,
+.our-work-coaches .wp-block-column,
+.our-work-model-grades .wp-block-column {
 	border: 1px solid var(--lightgray,lightgray);
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	padding: 1rem;
@@ -523,7 +666,9 @@ h2.our-work-model {
 :root {
 	--dark-gray:		#888888;
 	--light-gray:  		#dddddd;
-	--dark--green-1:	#24bca8;
+	--dark-green-1:		#24bca8;
+	--dark-green-2:		#10574d;
+	--dark-green-3:     #24c2ad;
 	--green:			#29d7c0;
 	--light-green-1:	#44dcc8;
 	--light-green-2:	#5fe1d0;
@@ -585,7 +730,7 @@ h2.our-work-model {
 /* Set up twitter footer ----------------------------------------------------------------------- */
 .indent,
 div[id^="wpforms-"] {
-	padding: 0 10rem 0 10rem;
+	padding: 0 10rem 0 10rem !important;
 }
 div[id="^wpforms-"]
 .wp-block-columns.our-work-coaches,
